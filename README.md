@@ -1,2 +1,2 @@
 # gdsduarte.github.io
-Front-End Web Development | Dorset College
+Front-End Web Development | Guilherme Duarte
