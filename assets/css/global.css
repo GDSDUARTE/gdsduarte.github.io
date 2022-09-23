@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
-body { /* max-width: 1920px; */ line-height: 1.5; margin-left: auto; margin-right: auto; 
+body { /* max-width: 1920px; */ line-height: 1.4; margin-left: auto; margin-right: auto; 
 min-height: 100vh; text-rendering: optimizeSpeed }  
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
@@ -19,6 +19,16 @@ input, button, textarea, select { font: inherit }
 body { 
     text-align: center;
     font-family: sans-serif;
+    color: antiquewhite;
+}
+
+body img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1; 
 }
 
 h1 {
@@ -34,6 +44,7 @@ h2 {
     letter-spacing: 6px;
     margin-bottom: 48px;
     line-height: 1.2;
+    color: black;
 }
 
 h3 {
@@ -42,9 +53,15 @@ h3 {
     margin-bottom: 20px;
     line-height: 1.2;
     text-transform: uppercase;
+    color: black;
 }
 
 p {
     font-size: 20px;
     margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
 }
