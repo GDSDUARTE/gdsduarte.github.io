@@ -17,9 +17,6 @@ input, button, textarea, select { font: inherit }
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
-img { 
-    margin-bottom: 32px
-}
 
 /* Web page */
 body { 
@@ -28,7 +25,7 @@ body {
 
 /* Main heading */
 h1 {
-	font-family: serif;
+	font-family: 'Domine', serif;
 	font-weight: bold;
 	font-size: 54px;
     letter-spacing: -1px;
@@ -39,7 +36,7 @@ h1 {
 
 /* Small headings */
 h2 {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     color: #5b569a;    
     font-size: 32px;
@@ -50,7 +47,7 @@ h2 {
 
 /* Smaller headings */
 h3 {
-	font-family: serif;
+	font-family: 'Domine', serif;
     font-weight: bold;
     font-size: 48px;
     color: #5b569a;
@@ -60,11 +57,15 @@ h3 {
 
 /* Text paragraphs */
 p {
-   font-family: sans-serif;
-   font-weight: normal;
-   font-size: 22px;
-   line-height: 1.6;
-   margin-top: 0;
-   margin-bottom: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
+/* Images */
+img { 
+    margin-bottom: 32px
+}
