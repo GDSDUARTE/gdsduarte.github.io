@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
-    <meta name="description" content="Sample web page description goes here.">
+    <title>Guilherme Duarte | Web Design Portfolio</title>
+    <meta name="description" content="Here are some projects I have built using my web design and development skills">
 
 	<!-- Preload large image -->
 
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
 
 	<!-- Google Fonts -->
 
@@ -26,28 +26,121 @@
 
 <body>
 
-    <!-- navigation menu -->
-    <nav></nav>
+   
+    <nav class="theme-dark menu-sticky">
 
-    <!-- header hero block -->
-    <header></header>
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="/assets/img/logo.png" alt="Sample website logo">
+            </a>
+            <div class="container-menu-links">
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+                <ul class="links-wrapper">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/index.html"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
 
-
-    <!-- main content with sections -->
+    </nav>
     <main>
+        <br>
+        <br>
+        <br>
+        <section class="section-selector-1 w-1140px theme-dark">
 
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+            <div class="col-1 col-1-width-1140px text-center">
+                <h2>Portfolio</h2>
+                <h3>Below you can see a selection of my web design and front-end development work.</h3>
+            </div>
+            <!-- Begin three-column flexbox grid -->
+            <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
 
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/smoothies/index.html"><img src="/assets/img/project-smoothie.jpg" alt="Placeholder image"></a>
+                    </figure>	
+                    <a href="/portfolio/smoothies/index.html" class="col-3-h3">Smooth Smoothies</a>	
+                    <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/fashion/index.html"><img src="/assets/img/project-fashion.jpg" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/fashion/index.html" class="col-3-h3">Snazzy Fashion</a>	
+                    <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/project-hero/index.html"><img src="/assets/img/project-hero.png" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/project-hero/index.html" class="col-3-h3">Hero Block Gallery</a>	
+                    <p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/crypto-wallet/index.html"><img src="/assets/img/project-crypto-wallet.jpg" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/crypto-wallet/index.html" class="col-3-h3">Crypto Wallet</a>	
+                    <p>A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/van-gogh/index.html"><img src="/assets/img/project-van-gogh.png" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/van-gogh/index.html" class="col-3-h3">Vincent van Gogh</a>	
+                    <p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/project-multi-column/index.html"><img src="/assets/img/project-multi-col.png" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/project-multi-column/index.html" class="col-3-h3">Multi-column Layouts</a>	
+                    <p>A gallery of multi-column, reponsive layouts.</p>
+                </div>
+            </div>
+            <!-- End three-column flexbox grid -->
+        </section>
     </main>
 
+    <div class="divisor">
+        <br>
+    </div>
     
     <!-- footer -->
-    <footer></footer>
-       
-    <script src="assets/js/lunevedy.js"></script>
+    <footer class="text-center-desktop text-center-mobile">
+
+		<h2>Guilherme Duarte</h2>
+
+		<h3>Nulla Repellat Nesciunt</h3>
+
+		<ul class="footer-links">
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/portfolio/index.html">Portifolio</a></li>
+			<li><a href="/contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+	</footer>
 
 </body>
 </html>

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
-    <meta name="description" content="Sample web page description goes here.">
+    <title>Guilherme Duarte | How can we help? </title>
+    <meta name="description" content="Talk to us today about website development and design that drives real returns from your online activities.">
+    
+    <!-- Preload large image -->
 
-	<!-- Preload large image -->
-
-	<!-- Stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 
-	<!-- Google Fonts -->
+    <!-- Google Fonts -->
 
     <!-- Font Awesome 6 icons. Delete if not using. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,33 +21,110 @@
     <!-- Line Awesome thin icons. Delete if not using. -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <style type="text/css">
+        iframe { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 0; }
+    </style>
+    
 </head>
-
-
 <body>
 
-    <!-- navigation menu -->
-    <nav></nav>
+    <nav class="theme-dark menu-sticky">
 
-    <!-- header hero block -->
-    <header></header>
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="/assets/img/logo.png" alt="Sample website logo">
+            </a>
+            <div class="container-menu-links">
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+                <ul class="links-wrapper">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="#"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="container-contact-form w-800px">
+
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mjvdbybq">
+
+            <div class="contact-form-upper">
+                <h2>How can we help?</h2>
+                <p>
+                    Have a project you'd like to discuss? Let's make something great together!
+                    <br>
+                    Use the form below to let me know a little more about your objectives and I'll get back to you.
+                </p>
+            </div>
+
+            <!-- Begin contact form fields -->
+
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="" data-nlok-ref-guid="b15afedc-24d3-4f2b-e385-009ce0edad44"><div id="norton-idsafe-field-styling-divId" style="height:32.58182040127841px;max-width:32.58182040127841px;vertical-align:top; position:absolute; top:315.9424348310991px;left:707.9504376632377px;cursor:pointer;resize: both;z-index:2147483646;"><img id="norton-idsafe-field-logo-imgId" src="moz-extension://67dc2588-09e2-4428-82bb-d0c68ecd7346/images/ic-field-logo.svg" style="height:32.58182040127841px; max-width:32.58182040127841px;"></div>
+                </div>
+                <div class="item-email">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
+                </div>
+
+                <div class="item-btn">
+                    <button id="btn-submit" type="submit" data-nlok-ref-guid="34f0e878-49fc-4bcf-d1d5-661a0986d1b0" class="btn-soft"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <!-- End contact form fields -->
+
+        </form><!-- Contact form ends here -->
+    </section><!-- End container for contact form -->
 
 
-    <!-- main content with sections -->
-    <main>
+    <div class="divisor">
+        <br>
+    </div>
 
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+    <!-- Footer -->
+    <footer class="text-center-desktop text-center-mobile">
 
-    </main>
+        <h2>Guilherme Duarte</h2>
 
-    
-    <!-- footer -->
-    <footer></footer>
-       
-    <script src="assets/js/lunevedy.js"></script>
+        <h3>Nulla Repellat Nesciunt</h3>
+
+        <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portfolio/index.html">Portifolio</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+        </ul>
+
+        <ul class="footer-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+
+        <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+    </footer>
 
 </body>
 </html>

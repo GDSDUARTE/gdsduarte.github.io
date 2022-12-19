@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
-    <meta name="description" content="Sample web page description goes here.">
+    <title>Guilherme Duarte | Front-end Developer </title>
+    <meta name="description" content="Freelance Web and Digital Developer crafting innovative online experiences on the web and social media.">
 
 	<!-- Preload large image -->
 
@@ -22,14 +22,27 @@
     <!-- Line Awesome thin icons. Delete if not using. -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- Cookie Consent Style -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="AlnqPe6vHQGMQRFOGiy0lJ5HEBg8190V0QLCgYYCdFY" />
+
 </head>
 <body>
 
-    <nav class="theme-light menu-sticky">
-        
+    
+    <nav class="theme-dark menu-sticky">
+
         <div class="container-menu menu-desktop">
             <a href="#" class="brand">
-                <img src="https://lunevedy.com/ui/assets/img/website-logo-sample.png" alt="Sample website logo">
+                <img src="/assets/img/logo.png" alt="Sample website logo">
             </a>
             <div class="container-menu-links">
                 <div class="nav-toggle">
@@ -38,53 +51,134 @@
                     <div class="bar-3"></div>
                 </div>
                 <ul class="links-wrapper">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portifolio</a></li>
-                    <li><a href="#">Exercises</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
                 </ul>
             </div>
         </div>
-        
-    </nav>
-    
-    <header class="theme-dark hero-bg text-center-mobile desktop-min-height-90vh header-after-menu-sticky">
 
-        <div class="container-text reveal-slide-from-left-header">
-			<div class="badge corners-soft">Welcome to my website</div>
-            <h1 class="text-shadow">Guilherme Duate</h1>
-            <h2>Front-end Developer</h2>
+    </nav>
+    <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-60vh">
+
+        <div class="container-text">
+            <div class="badge corners-soft">Front-end Developer</div>
+            <h1 class="text-shadow">Guilherme Duarte</h1>
+            <h2 class="text-shadow">I create digital experiences to promote products, services and events.</h2>
         </div>
-        <div class="container-btn reveal-slide-from-left-header">
-            <a href="#" class="btn btn-solid btn-pill btn-small"><i class="fas fa-shopping-cart"></i><span>Portifolio</span></a>
-            <a href="#" class="btn btn-outline btn-pill btn-small"><i class="fas fa-arrow-right"></i><span>Contact</span></a>
+        <div class="container-media">
+            <img src="" alt="Placeholder image">
         </div>
-        <div class="container-media pull-to-left">
-            <img src="/assets/img/home-page-hero-image.jpg.jpg" alt="Placeholder image">
+        <div class="container-btn">
+            <a href="/portfolio/index.html" class="btn btn-solid btn-pill btn-small">
+                <span>Portifolio</span><i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="/contact/index.html" class="btn btn-outline btn-pill btn-small">
+                <span>Contact</span><i class="fas fa-arrow-right"></i>
+            </a>
         </div>
-        <div class="container-overlay"></div>
 
     </header>
 
+    <div class="divisor">
+        <br>
+    </div>
 
-
-
-
-    <!-- main content with sections -->
     <main>
+        <section class="section-selector-1 w-1140px theme-dark">
 
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+            <div class="col-1 col-1-width-1140px text-center">
+                <h2>Recent projects</h2>
+                <h3>Below you can see some examples of my recent work. <br>Check out my complete portfolio. Have a project you would like to discuss? <br>Let's make something great together!</h3>
+            </div>
+            <!-- Begin three-column flexbox grid -->
+            <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
 
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/smoothies/index.html"><img src="/assets/img/project-smoothie.jpg" alt="Placeholder image"></a>
+                    </figure>	
+                    <a href="/portfolio/smoothies/index.html" class="col-3-h3">Smooth Smoothies</a>	
+                    <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/fashion/index.html"><img src="/assets/img/project-fashion.jpg" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/fashion/index.html" class="col-3-h3">Snazzy Fashion</a>	
+                    <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+                </div>
+
+                <div class="col-3">
+                    <figure class="photos-brightness photos-zoom">
+                        <a href="/portfolio/project-hero/index.html"><img src="/assets/img/project-hero.png" alt="Placeholder image"></a>
+                    </figure>
+                    <a href="/portfolio/project-hero/index.html" class="col-3-h3">Hero Block Gallery</a>	
+                    <p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
+                </div>
+            </div>
+            <!-- End three-column flexbox grid -->
+        </section>
     </main>
 
+    <div class="divisor">
+        <br>
+    </div>
     
-    <!-- footer -->
-    <footer></footer>
+	<footer class="text-center-desktop text-center-mobile">
+
+		<h2>Guilherme Duarte</h2>
+
+		<h3>Nulla Repellat Nesciunt</h3>
+
+		<ul class="footer-links">
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/portfolio/index.html">Portifolio</a></li>
+			<li><a href="/contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+	</footer>
        
-    <script src="assets/js/lunevedy.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJGDMNFGGB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XJGDMNFGGB');
+    </script>
+
+    <!-- Privacy Pop-up Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#000"
+            },
+            "button": {
+            "background": "#14F195"
+            }
+        },
+        "theme": "classic",
+        "position": "bottom-right",
+        "content": {
+            "href": "https://gdsduarte.github.io/privacy.html"
+        }
+        });
+    </script>
 
 </body>
 </html>

@@ -1,45 +1,25 @@
 /* Add your custom CSS here */
 nav.theme-dark,
 nav.theme-dark ul.links-wrapper.active { background-color: rgb(25, 25, 25) }
-nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle { background-color: var(--trans-000) }
 nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
 nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
 nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-3 { background-color: rgb(25, 25, 25) }
+nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
+nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-2,
+nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-3 { background-color: #FFDBC1 }
+nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle { background-color: #FFDBC1 }
+nav.theme-dark,
+nav.theme-dark ul.links-wrapper.active { background-color: rgb(25, 25, 25) }
 
-nav.theme-dark ul.links-wrapper li a:link,
-nav.theme-dark ul.links-wrapper li a:visited { color: var(--green-400) }
-nav.theme-dark ul.links-wrapper li a:focus,
-nav.theme-dark ul.links-wrapper li a:hover,
-nav.theme-dark ul.links-wrapper li a:active { color: var(--sky-400) }
-
-nav.theme-dark a#btn-cta:link,
-nav.theme-dark a#btn-cta:visited { color: var(--green-400) }
-nav.theme-dark a#btn-cta:link,
-nav.theme-dark a#btn-cta:visited { border-color: rgb(25, 25, 25)}
-nav.theme-dark a#btn-cta:focus,
-nav.theme-dark a#btn-cta:hover,
-nav.theme-dark a#btn-cta:active { border-color: var(--sky-400) }
-nav.theme-dark a#btn-cta:focus,
-nav.theme-dark a#btn-cta:hover,
-nav.theme-dark a#btn-cta:active { color: var(--sky-400) }
-
-
-
-
-
-header.theme-dark { background-color: rgb(25, 25, 25)}
-header.theme-dark .container-text .badge { background-color: var(--sky-400)}
+header.theme-dark .container-text .badge { background-color: var(--trans-000) }
 header.theme-dark h1 { color: var(--green-400) }
-header.theme-dark .container-text .badge { color: var(--black-000) }
-
-header.theme-dark .btn { width: 120px; text-align: center;}
+header.theme-dark .container-text .badge { color: var(--white-000) }
 header.theme-dark .container-btn a.btn:nth-child(1):link,
-header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--sky-400)}
+header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--sky-400) }
 header.theme-dark .container-btn a.btn:nth-child(1):link,
-header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: rgb(25, 25, 25) }
+header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--trans-000) }
 header.theme-dark .container-btn a.btn:nth-child(1):link,
 header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--white-000) }
-
 header.theme-dark .container-btn a.btn:nth-child(1):focus,
 header.theme-dark .container-btn a.btn:nth-child(1):hover,
 header.theme-dark .container-btn a.btn:nth-child(1):active { background-color: var(--sky-400) }
@@ -49,12 +29,10 @@ header.theme-dark .container-btn a.btn:nth-child(1):active { border-color: var(-
 header.theme-dark .container-btn a.btn:nth-child(1):focus,
 header.theme-dark .container-btn a.btn:nth-child(1):hover,
 header.theme-dark .container-btn a.btn:nth-child(1):active { color: var(--black-000) }
-
 header.theme-dark .container-btn a.btn:nth-child(2):link,
 header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--green-400) }
 header.theme-dark .container-btn a.btn:nth-child(2):link,
 header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--white-000) }
-
 header.theme-dark .container-btn a.btn:nth-child(2):focus,
 header.theme-dark .container-btn a.btn:nth-child(2):hover,
 header.theme-dark .container-btn a.btn:nth-child(2):active { background-color: var(--green-400) }
@@ -65,26 +43,38 @@ header.theme-dark .container-btn a.btn:nth-child(2):focus,
 header.theme-dark .container-btn a.btn:nth-child(2):hover,
 header.theme-dark .container-btn a.btn:nth-child(2):active { color: var(--black-000) }
 
+nav.theme-dark a#btn-cta:link,
+nav.theme-dark a#btn-cta:visited { color: var(--green-400) }
+nav.theme-dark a#btn-cta:link,
+nav.theme-dark a#btn-cta:visited { border-color: var(--sky-400) }
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active { border-color: var(--green-400) }
+nav.theme-dark a#btn-cta:focus,
+nav.theme-dark a#btn-cta:hover,
+nav.theme-dark a#btn-cta:active { color: var(--sky-400) }
+nav.theme-dark ul.links-wrapper li a:link,
+nav.theme-dark ul.links-wrapper li a:visited { color: var(--green-400) }
+nav.theme-dark ul.links-wrapper li a:focus,
+nav.theme-dark ul.links-wrapper li a:hover,
+nav.theme-dark ul.links-wrapper li a:active { color: var(--sky-400) }
 
-.section-selector-1 { background-color: rgb(25, 25, 25);}
 .section-selector-1 .col-1 h2 { color: var(--green-400) }
-.section-selector-1 .flex-cols-3 .col-3 { background-color: var(--black-000);}
 .section-selector-1 .flex-cols-3 .col-3 a.col-3-h3:link,
 .section-selector-1 .flex-cols-3 .col-3 a.col-3-h3:visited { color: var(--green-400) }
 .section-selector-1 .flex-cols-3 .col-3 a.col-3-h3:focus,
 .section-selector-1 .flex-cols-3 .col-3 a.col-3-h3:hover,
 .section-selector-1 .flex-cols-3 .col-3 a.col-3-h3:active { color: var(--sky-400) }
-
-.section-selector-1 div[class^='flex-cols-'] div[class^='col-'] { border-color: rgb(25, 25, 25); }
-.section-selector-1 div[class^='col-'] a[class^='col-']:link, 
-.section-selector-1 div[class^='col-'] a[class^='col-']:visited { text-decoration-color: var(--sky-400) }
-.section-selector-1 div[class^='col-'] a[class^='col-']:focus, 
-.section-selector-1 div[class^='col-'] a[class^='col-']:hover, 
-.section-selector-1 div[class^='col-'] a[class^='col-']:active { text-decoration-color: var(--green-400) }
+.theme-light.section-selector-1 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--green-400) }
+.section-selector-1 div[class^='col-'] a[class^='col-']:link, .section-selector-1 div[class^='col-'] a[class^='col-']:visited { text-decoration-color: var(--sky-400) }
+.section-selector-1 div[class^='col-'] a[class^='col-']:focus, .section-selector-1 div[class^='col-'] a[class^='col-']:hover, .section-selector-1 div[class^='col-'] a[class^='col-']:active { text-decoration-color: var(--green-400) }
 
 
 
-footer { background-color: rgb(25, 25, 25) }
+footer { 
+   
+    background-color: rgb(25, 25, 25) 
+}
 footer h2 { color: var(--green-400) }
 
 footer ul.footer-icons li a:link i, 
@@ -108,8 +98,24 @@ footer p.privacy a:focus,
 footer p.privacy a:hover, 
 footer p.privacy a:active { color: var(--sky-400); text-decoration-color: var(--sky-400) }
 
-html { background-color: rgb(25, 25, 25) }
 
+.container-contact-form { background-color: rgb(25, 25, 25) }
+#contact-form { background-color: rgb(25, 25, 25) }
+#contact-form h2 { color: var(--green-400) }
+#contact-form p { color: var(--white-000) }
+#contact-form label { color: var(--green-400) }
+#contact-form input { color: rgb(48, 48, 48) }
+#contact-form [type="text"] { background-color: var(--white-000) }
+#contact-form [type="email"] { background-color: var(--white-000) }
+#contact-form textarea { background-color: var(--white-000) }
+#contact-form #btn-submit { background-color: rgb(25, 25, 25)  }
+#contact-form #btn-submit { border-color: var(--green-400) }
+#contact-form #btn-submit:focus { background-color: var(--green-400) }
+#contact-form #btn-submit:hover { background-color: var(--green-400) }
+#contact-form #btn-submit:focus { color: var(--black-000) }
+#contact-form #btn-submit:hover { color: var(--black-000) }
+
+html { background-color: rgb(25, 25, 25) }
 .divisor { 
     background-color: var(--white-000);
     height: 1px;
