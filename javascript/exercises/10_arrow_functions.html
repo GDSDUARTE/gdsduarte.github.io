@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Heading 1</h2>
+
+    <h2>Heading 2</h2>
+
+    <h2>Heading 3</h2>
+
+    <h2>Heading 4</h2>
+
+    <script>
+        
+        const varNumber = 10;
+        const varString = "Hello World";
+
+        // Function Declaration
+        console.log("\%c=== EXERCISE 01 ===", "color: white; background-color: green; padding: 2px");
+
+        function sayHello() {
+            console.log("Hello World");
+        }
+        sayHello();
+
+        // Function expression anonymous
+        console.log("\%c=== EXERCISE 02 ===", "color: white; background-color: green; padding: 2px");
+
+        const sayHello2 = function () {
+            console.log("Hello World 2");
+        }
+        sayHello2();
+
+        /* Arrow function 01 */
+        console.log("\%c=== EXERCISE 03 ===", "color: white; background-color: green; padding: 2px");
+
+        const sayHello3 = () => {
+            console.log("Hello World 3");
+        }
+        sayHello3();
+
+        // Minimalistic arrow function 01
+        const sayHello4 = () => console.log("Hello World 4");
+        sayHello4();
+
+        /* Arrow function 02 */
+        console.log("\%c=== EXERCISE 04 ===", "color: white; background-color: green; padding: 2px");
+
+        const msg = "Hello message";
+        const sayHello5 = (msg) => {
+            console.log("Message is: " + msg);
+            console.log(`Message is: ${msg}`);
+        }
+        sayHello5(msg);
+
+        // Minimalistic arrow function 02
+        const sayHello6 = msg => console.log("Message is: " + msg);
+        sayHello6(msg);
+
+        /* Arrow function 03 */
+        console.log("\%c=== EXERCISE 05 ===", "color: white; background-color: green; padding: 2px");
+
+        const doubleNumber = (x) => {
+            return x * 2;
+        }
+        const result = doubleNumber(5);
+        console.log(`The answer is: ${result}`);
+
+        // Minimalistic arrow function 03
+        const doubleNumber2 = x => x * 2;
+        const result2 = doubleNumber2(10);
+        console.log(`The answer is: ${result2}`);
+
+        /* Working with Arrays */
+        console.log("\%c=== EXERCISE 06 ===", "color: white; background-color: green; padding: 2px");
+
+        const arrUsers = ["Bridget", "Carol", "Christine", "Deborah"];
+        console.log(`Array lenght is: ${arrUsers.length}`);
+        console.log(`Person 0: ${arrUsers[0]}`);
+
+        // Looping through an array 01
+        for (let i = 0; i < arrUsers.length; i++) {
+            console.log(`Person ${i}: ${arrUsers[i]}`);
+        }
+
+        // Minimalistic looping through an array 01
+        arrUsers.forEach((user, index) => {
+            console.log(`Person ${index}: ${user}`);
+        });
+
+        /* Selecting an element */
+        console.log("\%c=== EXERCISE 07 ===", "color: white; background-color: green; padding: 2px");
+        
+        const arrHeading = document.querySelectorAll("h2");
+        console.log(arrHeading.length);
+
+        // Looping through an array
+        for (let i = 0; i < arrHeading.length; i++) {
+            console.log(`Array element ${arrHeading[i].textContent}`);
+        }
+
+        // Minimalistic looping through an array
+        arrHeading.forEach((heading) => console.log(`Array element ${heading.textContent}`));
+
+    </script>
+
+</body>
+
+</html>

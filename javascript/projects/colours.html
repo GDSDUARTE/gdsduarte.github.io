@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project: Colours</title>
+
+    <style>
+        .theme-js {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .theme-js h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .theme-js button {
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .theme-js p {
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="theme-js">
+        <h1>JavaScript Project: Colours</h1>
+        <button id="btn-color">Click Me</button>
+        <p id="color-display"></p>
+    </div>
+
+    <script>
+
+        const arrHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+        const btnColor = document.querySelector("#btn-color");
+        const strColorDisplay = document.querySelector("#color-display");
+
+        btnColor.addEventListener("click", function () {
+            let strHexColor = "#";
+
+            for (let i = 0; i < 6; i++) {
+                strHexColor = strHexColor + arrHex[getRandomNumber()];
+            }
+
+            strColorDisplay.textContent = strHexColor;
+
+            document.body.style.backgroundColor = strHexColor;
+
+        });
+
+        // Generate number in range 0 - 15
+        function getRandomNumber() {
+            return Math.floor(Math.random() * arrHex.length);
+        }
+
+    </script>
+
+</body>
+
+</html>
