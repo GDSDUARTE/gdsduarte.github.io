@@ -123,3 +123,13 @@ nav img {
     width: 200px;
     height: 40px;
 }
+
+.section-selector-1 a:link, .section-selector-1 a:visited { 
+    color: var(--green-400);
+    text-decoration-color: var(--sky-400);
+}
+
+.section-selector-1 a:focus, .section-selector-1 a:hover, .section-selector-1 a:active { 
+    color: var(--sky-400);
+    text-decoration-color: var(--sky-400);
+}
