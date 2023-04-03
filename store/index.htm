@@ -2,103 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
-    <meta name="description" content="Sample web page description goes here.">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <meta name="description" content="Sample web page description goes here.">
 
-    <!-- Preload large image -->
+  <!-- Preload large image -->
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./assets/lunevedy.min.css">
-    <link rel="stylesheet" href="./assets/custom.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/lunevedy.min.css">
+  <link rel="stylesheet" href="./assets/custom.css">
 
-    <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
+  <link rel="stylesheet" href="/assets/css/custom.css">
 
-    <!-- Font Awesome 6 icons. Delete if not using. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+
+  <!-- Font Awesome 6 icons. Delete if not using. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+   
+   .col-3 h3 {
+    color: var(--green-400);
+   }
+
+    .col-3 p {
+      color: white;
+    }
+
+    .btn-solid {
+      background-color: var(--sky-400) !important;
+      border-radius: 15px;
+      color: black !important;
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-    <!-- menu and 'hero block' header -->
-    <nav></nav>
+  <!-- menu and 'hero block' header -->
+  <nav class="theme-dark menu-sticky">
+    <div class="container-menu menu-desktop">
+      <a href="/index.html" class="brand">
+        <img src="/assets/img/logo.png" alt="Sample website logo">
+      </a>
+      <div class="container-menu-links">
+        <div class="nav-toggle">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+        <ul class="links-wrapper">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/portfolio/index.html">Portifolio</a></li>
+          <li><a href="/store/index.htm">Store</a></li>
+          <li>
+            <a class="btn btn-outline" id="btn-cta" href="/contact/index.html">
+              <span>Contact</span><i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- header starts here -->
+  <!-- header starts here -->
 
-    <header class="theme-light text-center-mobile">
+  <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-50vh">
 
-        <div class="container-text">
-            <h1>Store</h1>
-            <h2>Check out my quality merchandise.</h2>
+    <div class="container-text">
+      <h1>Store</h1>
+      <h2>Check out my quality merchandise.</h2>
+    </div>
+
+
+  </header>
+  <!-- header ends here -->
+
+  <!-- main content with sections -->
+  <main>
+
+    <!-- section starts here -->
+
+    <section class="theme-light section-selector-1">
+
+      <!-- Begin three-column flexbox grid -->
+      <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
+
+        <div class="col-3">
+          <figure>
+            <img src="./assets/img/javascript.jpg" alt="Placeholder image">
+          </figure>
+
+          <h3>JavaScript – The Definitive Guide</h3>
+          <p>JavaScript – The Definitive Guide, 7e: Master the World's Most-Used Programming Language
+            Paperback</p>
+          <a href="https://www.amazon.co.uk/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_4?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706944&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-4&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=7d3eeb3b250dc1744bfd4f3849fdbb3c&camp=1634&creative=6738"
+            class="btn btn-solid"><span>Buy now!</span></a>
         </div>
 
-        <div class="container-btn">
-            <a href="#" class="btn btn-solid"><i class="fas fa-shopping-cart"></i><span>Order now</span></a>
-            <a href="#" class="btn btn-outline"><i class="fas fa-arrow-right"></i><span>Learn more</span></a>
+        <div class="col-3">
+          <figure>
+            <img src="./assets/img/eloquentjavascript.jpg" alt="Placeholder image">
+          </figure>
+
+          <h3>Eloquent JavaScript</h3>
+          <p>Eloquent Javascript, 3rd Edition: A Modern Introduction to Programming Paperback – Illustrated.
+          </p>
+          <a href="https://www.amazon.co.uk/Eloquent-Javascript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706725&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-7&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b33753e3747321f89ade2b016da38bd3&camp=1634&creative=6738"
+            class="btn btn-solid"><span>Buy now!</span></a>
         </div>
 
-    </header>
-    <!-- header ends here -->
+        <div class="col-3">
+          <figure>
+            <img src="./assets/img/javascriptthehidden.jpg" alt="Placeholder image">
+          </figure>
 
-    <!-- main content with sections -->
-    <main>
+          <h3>JavaScript: The Hidden Parts</h3>
+          <p>Building More Performant, Flexible, and Maintainable Applications.</p>
+          <a href="https://www.amazon.co.uk/JavaScript-Building-Performant-Maintainable-Applications/dp/1098122259/ref=sr_1_20?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678707779&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-20&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b320f53108bb67f10cb5dd8a17f1b085&camp=1634&creative=6738"
+            class="btn btn-solid"><span>Buy now!</span></a>
+        </div>
 
-        <!-- section starts here -->
+      </div>
+      <!-- End three-column flexbox grid -->
 
-        <section class="theme-light section-selector-1">
+    </section>
+    <!-- section ends here -->
 
-            <!-- Begin three-column flexbox grid -->
-            <div class="flex-cols-3">
+  </main>
 
-                <div class="col-3">
-                    <figure>
-                        <img src="./assets/img/javascript.jpg" alt="Placeholder image">
-                    </figure>
+  <div class="divisor">
+    <br>
+  </div>
 
-                    <h3>JavaScript – The Definitive Guide</h3>
-                    <p>JavaScript – The Definitive Guide, 7e: Master the World's Most-Used Programming Language
-                        Paperback</p>
-                    <a href="https://www.amazon.co.uk/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_4?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706944&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-4&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=7d3eeb3b250dc1744bfd4f3849fdbb3c&camp=1634&creative=6738"
-                        class="btn btn-solid"><span>Buy now!</span><i class="fa-regular fa-cart-shopping"></i></a>
-                </div>
+  <!-- footer -->
+  <footer class="text-center-desktop text-center-mobile">
+    <h2>Guilherme Duarte</h2>
+    <h3>Front-end Developer</h3>
+    <ul class="footer-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/portfolio/index.html">Portifolio</a></li>
+      <li><a href="/store/index.htm">Store</a></li>
+      <li><a href="/contact/index.html">Contact</a></li>
+    </ul>
 
-                <div class="col-3">
-                    <figure>
-                        <img src="./assets/img/eloquentjavascript.jpg" alt="Placeholder image">
-                    </figure>
-
-                    <h3>Eloquent JavaScript</h3>
-                    <p>Eloquent Javascript, 3rd Edition: A Modern Introduction to Programming Paperback – Illustrated.
-                    </p>
-                    <a href="https://www.amazon.co.uk/Eloquent-Javascript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706725&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-7&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b33753e3747321f89ade2b016da38bd3&camp=1634&creative=6738"
-                        class="btn btn-solid"><span>Buy now!</span><i class="fa-regular fa-cart-shopping"></i></a>
-                </div>
-
-                <div class="col-3">
-                    <figure>
-                        <img src="./assets/img/javascriptthehidden.jpg" alt="Placeholder image">
-                    </figure>
-
-                    <h3>JavaScript: The Hidden Parts</h3>
-                    <p>Building More Performant, Flexible, and Maintainable Applications.</p>
-                    <a href="https://www.amazon.co.uk/JavaScript-Building-Performant-Maintainable-Applications/dp/1098122259/ref=sr_1_20?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678707779&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-20&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b320f53108bb67f10cb5dd8a17f1b085&camp=1634&creative=6738"
-                        class="btn btn-solid"><span>Buy now!</span><i class="fa-regular fa-cart-shopping"></i></a>
-                </div>
-
-            </div>
-            <!-- End three-column flexbox grid -->
-
-        </section>
-        <!-- section ends here -->
-
-    </main>
-
-    <!-- footer -->
-    <footer></footer>
+    <ul class="footer-icons">
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+    </ul>
+    <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+  </footer>
 
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

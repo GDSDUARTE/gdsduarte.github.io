@@ -1,146 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Duarte | Web Design Portfolio</title>
-    <meta name="description" content="Here are some projects I have built using my web design and development skills">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Duarte | Web Design Portfolio</title>
+  <meta name="description" content="Here are some projects I have built using my web design and development skills">
 
-	<!-- Preload large image -->
+  <!-- Preload large image -->
 
-	<!-- Stylesheets -->
-    <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
+  <link rel="stylesheet" href="../assets/css/custom.css" />
 
-	<!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome 6 icons. Delete if not using. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome 6 icons. Delete if not using. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Line Awesome thin icons. Delete if not using. -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- Line Awesome thin icons. Delete if not using. -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <style>
+    #javascript-projects {
+      display: none;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.5s ease;
+    }
+
+    header.theme-darker {
+      background-color: rgb(25, 25, 25);
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      margin-bottom: -50px;
+      z-index: 1;
+    }
+
+    header.theme-darker h1 {
+      color: var(--green-400)
+    }
+
+    header.theme-darker h2 {
+      color: var(--white-000);
+    }
+
+    #project-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container button {
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: var(--green-400);
+      color: rgb(25, 25, 25);
+      font-size: 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button-container button:hover {
+      background-color: var(--sky-400);
+      color: #fff;
+    }
+
+    .button-container button:focus {
+      outline: none;
+    }
+
+    .button-container button:active {
+      transform: scale(0.95);
+    }
+
+    .button-container button#uiux-btn:focus {
+      outline: none;
+    }
+
+    .button-container button#javascript-btn:focus {
+      outline: none;
+    }
+
+    .button-container button#uiux-btn:active {
+      transform: scale(0.95);
+    }
+
+    .button-container button#javascript-btn:active {
+      transform: scale(0.95);
+    }
+
+    .button-container button.uiux-btn-active {
+      background-color: royalblue;
+      color: #fff;
+    }
+
+    .button-container button.javascript-btn-active {
+      background-color: yellow;
+      color: rgb(25, 25, 25);
+    }
+  </style>
 
 </head>
-<body>
-    
-    <nav class="theme-dark menu-sticky">
 
-        <div class="container-menu menu-desktop">
-            <a href="/index.html" class="brand">
-                <img src="/assets/img/logo.png" alt="Sample website logo">
+<body>
+
+  <nav class="theme-dark menu-sticky">
+    <div class="container-menu menu-desktop">
+      <a href="/index.html" class="brand">
+        <img src="/assets/img/logo.png" alt="Sample website logo">
+      </a>
+      <div class="container-menu-links">
+        <div class="nav-toggle">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+        <ul class="links-wrapper">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/portfolio/index.html">Portifolio</a></li>
+          <li><a href="/store/index.htm">Store</a></li>
+          <li>
+            <a class="btn btn-outline" id="btn-cta" href="/contact/index.html">
+              <span>Contact</span><i class="fa-solid fa-chevron-right"></i>
             </a>
-            <div class="container-menu-links">
-                <div class="nav-toggle">
-                    <div class="bar-1"></div>
-                    <div class="bar-2"></div>
-                    <div class="bar-3"></div>
-                </div>
-                <ul class="links-wrapper">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/portfolio/index.html">Portifolio</a></li>
-                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/index.html"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
-                </ul>
-            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <br>
+    <br>
+    <br>
+    <header id="background-section" class="cols-2-half text-center-mobile flex-column-reverse theme-darker">
+
+      <div class="col-2 col-text">
+        <h1>Portfolio</h1>
+        <h2>Below you can see a selection of my UI-UX design and JavaScript development work.</h2>
+
+        <div class="button-container">
+          <button id="uiux-btn" data-img-src="/assets/img/UI-UX.png">UI/UX
+            Design
+          </button>
+          <button id="javascript-btn" data-img-src="/assets/img/JavaScript.png">JavaScript Projects
+          </button>
+        </div>
+      </div>
+
+      <div class="col-2 col-visual">
+        <figure class="">
+          <img id="project-image" src="/assets/img/UI-UX.png" alt="Placeholder image">
+        </figure>
+      </div>
+
+    </header>
+
+    <!-- UI/UX Projects -->
+    <section class="section-selector-1 uiux-projects w-1140px theme-dark">
+      <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
+
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/smoothies/index.html">
+              <img src="/assets/img/project-smoothie.jpg" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/smoothies/index.html" class="col-3-h3">Smooth Smoothies</a>
+          <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
         </div>
 
-    </nav>
-    <main>
-        <br>
-        <br>
-        <br>
-        <section class="section-selector-1 w-1140px theme-dark">
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/fashion/index.html">
+              <img src="/assets/img/project-fashion.jpg" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/fashion/index.html" class="col-3-h3">Snazzy Fashion</a>
+          <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+        </div>
 
-            <div class="col-1 col-1-width-1140px text-center">
-                <h2>Portfolio</h2>
-                <h3>Below you can see a selection of my web design and front-end development work.</h3>
-            </div>
-            <!-- Begin three-column flexbox grid -->
-            <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-hero/index.html">
+              <img src="/assets/img/project-hero.png" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/project-hero/index.html" class="col-3-h3">Hero Block Gallery</a>
+          <p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
+        </div>
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/smoothies/index.html"><img src="/assets/img/project-smoothie.jpg" alt="Placeholder image"></a>
-                    </figure>	
-                    <a href="/portfolio/smoothies/index.html" class="col-3-h3">Smooth Smoothies</a>	
-                    <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
-                </div>
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/crypto-wallet/index.html">
+              <img src="/assets/img/project-crypto-wallet.jpg" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/crypto-wallet/index.html" class="col-3-h3">Crypto Wallet</a>
+          <p>A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+        </div>
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/fashion/index.html"><img src="/assets/img/project-fashion.jpg" alt="Placeholder image"></a>
-                    </figure>
-                    <a href="/portfolio/fashion/index.html" class="col-3-h3">Snazzy Fashion</a>	
-                    <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
-                </div>
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/van-gogh/index.html">
+              <img src="/assets/img/project-van-gogh.png" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/van-gogh/index.html" class="col-3-h3">Vincent van Gogh</a>
+          <p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video
+            from YouTube.</p>
+        </div>
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/project-hero/index.html"><img src="/assets/img/project-hero.png" alt="Placeholder image"></a>
-                    </figure>
-                    <a href="/portfolio/project-hero/index.html" class="col-3-h3">Hero Block Gallery</a>	
-                    <p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
-                </div>
+        <div class="col-3">
+          <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure>
+          <a href="/portfolio/project-multi-column/index.html" class="col-3-h3">Multi-column Layouts</a>
+          <p>A gallery of multi-column, reponsive layouts.</p>
+        </div>
+      </div>
+    </section>
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/crypto-wallet/index.html"><img src="/assets/img/project-crypto-wallet.jpg" alt="Placeholder image"></a>
-                    </figure>
-                    <a href="/portfolio/crypto-wallet/index.html" class="col-3-h3">Crypto Wallet</a>	
-                    <p>A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
-                </div>
+    <!-- JavaScript Projects -->
+    <section id="javascript-projects" class="section-selector-1 w-1140px theme-dark">
+      <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/van-gogh/index.html"><img src="/assets/img/project-van-gogh.png" alt="Placeholder image"></a>
-                    </figure>
-                    <a href="/portfolio/van-gogh/index.html" class="col-3-h3">Vincent van Gogh</a>	
-                    <p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
-                </div>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/data-tables/index.html" class="col-3-h3">Data Tables</a>
+          <p>Populates an HTML table with data stored in an array. Includes the option to remove data items.
+          </p>
+        </div>
 
-                <div class="col-3">
-                    <figure class="photos-brightness photos-zoom">
-                        <a href="/portfolio/project-multi-column/index.html"><img src="/assets/img/project-multi-col.png" alt="Placeholder image"></a>
-                    </figure>
-                    <a href="/portfolio/project-multi-column/index.html" class="col-3-h3">Multi-column Layouts</a>	
-                    <p>A gallery of multi-column, reponsive layouts.</p>
-                </div>
-            </div>
-            <!-- End three-column flexbox grid -->
-        </section>
-    </main>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/weather/index.html" class="col-3-h3">Weather for Dublin</a>
+          <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+        </div>
 
-    <div class="divisor">
-        <br>
-    </div>
-    
-    <!-- footer -->
-    <footer class="text-center-desktop text-center-mobile">
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/movies/index.html" class="col-3-h3">Movies Listing</a>
+          <p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet
+            Movie Database.</p>
+        </div>
 
-		<h2>Guilherme Duarte</h2>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/quotes/index.html" class="col-3-h3">Random Quotes Generator</a>
+          <p>Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.</p>
+        </div>
 
-		<h3>Front-end Developer</h3>
+        <div class="col-3">
+          <!--  <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/calculator-modules/index.html" class="col-3-h3">Calculator with Modules</a>
+          <p>A basic calculator that uses export/import statements to share code with a JavaScript module
+            file.</p>
+        </div>
 
-		<ul class="footer-links">
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/portfolio/index.html">Portifolio</a></li>
-			<li><a href="/contact/index.html">Contact</a></li>
-		</ul>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/image-blur-filter/index.html" class="col-3-h3">Image Blue Filter</a>
+          <p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an
+            image.</p>
+        </div>
 
-		<ul class="footer-icons">
-			<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-			<li><a href="#"><i class="fab fa-github-square"></i></a></li>
-			<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-			<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-		</ul>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/counter/index.html" class="col-3-h3">Counter</a>
+          <p>An increment and decrement counter that changes the colour of the number displayed on the web
+            page.</p>
+        </div>
 
-		<p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/tip-calculator/index.html" class="col-3-h3">Tip Calculator</a>
+          <p>Calculates the tip for a restaurant bill based on the level of service and the number of
+            customers.</p>
+        </div>
 
-	</footer>
+        <div class="col-3">
+          <!-- <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/image-slideshow/index.html" class="col-3-h3">Image Slideshow</a>
+          <p>A slideshow with an array of images from Dublin city, Ireland.</p>
+        </div>
+
+        <div class="col-3">
+          <!--  <figure class="photos-brightness photos-zoom">
+            <a href="/portfolio/project-multi-column/index.html">
+              <img src="/assets/img/project-multi-col.png" alt="Placeholder image">
+            </a>
+          </figure> -->
+          <a href="/portfolio/js/colours/index.html" class="col-3-h3">Random Colour Generator</a>
+          <p>Uses an array of hexadecimal values to randomly generate a background colour for the web page.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="divisor">
+    <br>
+  </div>
+
+  <!-- footer -->
+  <footer class="text-center-desktop text-center-mobile">
+    <h2>Guilherme Duarte</h2>
+    <h3>Front-end Developer</h3>
+    <ul class="footer-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/portfolio/index.html">Portifolio</a></li>
+      <li><a href="/store/index.htm">Store</a></li>
+      <li><a href="/contact/index.html">Contact</a></li>
+    </ul>
+
+    <ul class="footer-icons">
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+    </ul>
+    <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const uiuxBtn = document.getElementById("uiux-btn");
+      const javascriptBtn = document.getElementById("javascript-btn");
+      const javascriptProjects = document.getElementById("javascript-projects");
+      const uiuxProjects = document.querySelector(".uiux-projects");
+  
+      uiuxBtn.addEventListener("click", () => {
+        uiuxProjects.style.transform = "translateX(0)";
+        uiuxProjects.style.opacity = "1";
+        uiuxProjects.style.display = "flex";
+        javascriptProjects.style.transform = "translateX(100%)";
+        javascriptProjects.style.opacity = "0";
+        setTimeout(() => {
+          javascriptProjects.style.display = "none";
+        }, 100);
+  
+        uiuxBtn.classList.add('uiux-btn-active');
+        javascriptBtn.classList.remove('javascript-btn-active');
+      });
+  
+      javascriptBtn.addEventListener("click", () => {
+        uiuxProjects.style.transform = "translateX(-100%)";
+        uiuxProjects.style.opacity = "0";
+        setTimeout(() => {
+          uiuxProjects.style.display = "none";
+        }, 100);
+        javascriptProjects.style.transform = "translateX(0)";
+        javascriptProjects.style.opacity = "1";
+        javascriptProjects.style.display = "flex";
+  
+        javascriptBtn.classList.add('javascript-btn-active');
+        uiuxBtn.classList.remove('uiux-btn-active');
+      });
+  
+      const buttons = document.querySelectorAll('.button-container button');
+      const backgroundSection = document.getElementById('background-section');
+      const projectImage = document.getElementById('project-image');
+  
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const newBackgroundImage = button.getAttribute('data-bg-image');
+          const newImageSrc = button.getAttribute('data-img-src');
+          backgroundSection.style.backgroundImage = `url(${newBackgroundImage})`;
+          projectImage.setAttribute('src', newImageSrc);
+        });
+      });
+    });
+  </script>
+  
 
 </body>
+
 </html>
