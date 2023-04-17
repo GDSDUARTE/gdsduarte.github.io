@@ -43,7 +43,7 @@ header.hero-block-js .hero-text-container img {
 
 .theme-js .container-btn { padding: 0 }
 
-.theme-js a.btn { padding: 13px 20px 13px 20px; font-weight: 600; border-width: 0 }
+.theme-js a.btn {padding: 13px 20px 13px 20px;font-weight: 600;border-width: 0}
 
 @-moz-document url-prefix() { .theme-js .col-2 a.btn { padding-bottom: 17px } }
 

@@ -9,17 +9,16 @@
     <meta name="description" content="A sample collection of my recent JavaScript projects.">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/lunadoge.css" />
-    <link rel="stylesheet" href="assets/css/css-javascript.css" />
+    <!-- <link rel="stylesheet" href="assets/css/lunadoge.css" /> -->
 
-   <!--  <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="/assets/css/custom.css" /> -->
+   <!-- Stylesheets -->
+   <link rel="stylesheet" href="../assets/css/css-javascript.css" />
+   <link rel="stylesheet" href="/assets/css/lunevedy2.min.css" />
+   <link rel="stylesheet" href="/assets/css/main.css" />
 
     <style>
         /* ============ Nav =============*/
-        .container-menu.menu-desktop {
-            background-color: var(--black-000);
-        }
+       
 
         /* ============ Header Colours =============*/
         header.hero-block-js {
@@ -48,7 +47,7 @@
         }
 
         .theme-js .col-4 {
-            background-color: var(--green-100)
+            
         }
 
         .theme-js h3 {
@@ -99,19 +98,25 @@
 <body>
 
     <!-- navigation menu -->
-    <nav class="container-menu menu-desktop menu-sticky">
-        <a href="#"><img src="/assets/img/logo.png" alt="website logo"></a>
-        <ul class="">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio/index.html">Portfolio</a></li>
-            <li><a href="/store/index.htm">Store</a></li>
-            <li><a href="/contact/index.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
-            </li>
-        </ul>
-        <div class="item-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <nav class="theme-dark">
+        <div class="container-menu menu-desktop">
+            <a href="/index.html" class="brand">
+                <img src="/assets/img/logo.png" alt="Website logo">
+            </a>
+            <div class="container-menu-links">
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+                <ul class="links-wrapper">
+                    <li><a class="btn btn-outline" id="btn-cta" href="/index.html">Home</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/store/index.htm">Store</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span>
+                            <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -123,6 +128,10 @@
             <img style="border-radius: 15px;" src="assets/img/JavaS.png" alt="Sample JavaScript code">
         </div>
     </header>
+
+    <div class="divisor">
+        <br>
+    </div>
 
     <!-- main content with sections -->
     <main>
@@ -235,25 +244,38 @@
 
     </main>
 
-    <!-- footer -->
-    <footer class="text-center-desktop text-center-mobile">
-        <h2>Guilherme Duarte</h2>
-        <h3>Front-end Developer</h3>
-        <ul class="footer-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio/index.html">Portifolio</a></li>
-            <li><a href="/store/index.htm">Store</a></li>
-            <li><a href="/contact/index.html">Contact</a></li>
-        </ul>
+    <div class="divisor">
+        <br>
+    </div>
 
-        <ul class="footer-icons">
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
-        <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+    <!-- footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h2>Guilherme Duarte</h2>
+            <h3>Front-end Developer</h3>
+            <p class="footer-links">
+                <a class="link-1" href="/index.html">Home</a>
+                .
+                <a href="/portfolio/index.html">Portifolio</a>
+                .
+                <a href="/store/index.htm">Store</a>
+                .
+                <a href="/contact/index.html">Contact</a>
+            </p>
+        </div>
+
+        <div class="footer-right-2">
+            <p class="privacy-2"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+            <div class="footer-right">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/menu.js"></script>

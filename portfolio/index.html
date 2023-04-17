@@ -68,7 +68,20 @@
       padding: 1rem;
       border-radius: 0.5rem;
       border: none;
-      background-color: var(--green-400);
+      background-color: #6445f1;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .button-container .button2 {
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: #efb039;
       color: rgb(25, 25, 25);
       font-size: 1.5rem;
       font-weight: 700;
@@ -77,8 +90,11 @@
     }
 
     .button-container button:hover {
-      background-color: var(--sky-400);
-      color: #fff;
+      background-color: #6595f7;
+    }
+
+    .button-container .button2:hover {
+      background-color: #fcd13b;
     }
 
     .button-container button:focus {
@@ -106,13 +122,13 @@
     }
 
     .button-container button.uiux-btn-active {
-      background-color: royalblue;
+      background-color: #6445f1;
       color: #fff;
     }
 
     .button-container button.javascript-btn-active {
-      background-color: yellow;
-      color: rgb(25, 25, 25);
+      background-color: #efb039;
+      color: black;
     }
 
     
@@ -145,10 +161,6 @@
       </div>
     </nav>
 
-    <div class="divisor">
-      <br>
-    </div>
-
     <header id="background-section" class="cols-2-half text-center-mobile flex-column-reverse theme-dark">
 
       <div class="col-2 col-text">
@@ -159,7 +171,7 @@
           <button id="uiux-btn" data-img-src="/assets/img/UI-UX.png">UI/UX
             Design
           </button>
-          <button id="javascript-btn" data-img-src="/assets/img/JavaScript.png">JavaScript Projects
+          <button class="button2" id="javascript-btn" data-img-src="/assets/img/JavaScript.png">JavaScript Projects
           </button>
         </div>
       </div>

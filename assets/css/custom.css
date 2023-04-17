@@ -5,7 +5,7 @@ nav.theme-dark ul.links-wrapper.active {
 }
 
 nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle {
-    background-color: var(--trans-000)
+    background-color: #292c2f;
 }
 
 nav.theme-dark.menu-sticky.menu-on-scroll .nav-toggle .bar-1,
