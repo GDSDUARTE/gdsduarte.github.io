@@ -12,11 +12,9 @@
   <!-- Preload large image -->
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="./assets/lunevedy.min.css">
-  <link rel="stylesheet" href="./assets/custom.css">
+  <link rel="stylesheet" href="/assets/css/lunevedy2.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-  <link rel="stylesheet" href="/assets/css/custom.css">
 
 
   <!-- Google Fonts -->
@@ -27,10 +25,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-   
-   .col-3 h3 {
-    color: var(--green-400);
-   }
+    .col-3 a {
+      text-decoration: none !important;
+    }
 
     .col-3 p {
       color: white;
@@ -41,7 +38,6 @@
       border-radius: 15px;
       color: black !important;
     }
-
   </style>
 
 </head>
@@ -49,10 +45,10 @@
 <body>
 
   <!-- menu and 'hero block' header -->
-  <nav class="theme-dark menu-sticky">
+  <nav class="theme-dark">
     <div class="container-menu menu-desktop">
       <a href="/index.html" class="brand">
-        <img src="/assets/img/logo.png" alt="Sample website logo">
+        <img src="/assets/img/logo.png" alt="Website logo">
       </a>
       <div class="container-menu-links">
         <div class="nav-toggle">
@@ -61,22 +57,23 @@
           <div class="bar-3"></div>
         </div>
         <ul class="links-wrapper">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/portfolio/index.html">Portifolio</a></li>
-          <li><a href="/store/index.htm">Store</a></li>
-          <li>
-            <a class="btn btn-outline" id="btn-cta" href="/contact/index.html">
-              <span>Contact</span><i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </li>
+          <li><a class="btn btn-outline" id="btn-cta" href="/index.html">Home</a></li>
+          <li><a class="btn btn-outline" id="btn-cta" href="/portfolio/index.html">Portifolio</a></li>
+          <li><a class="btn btn-outline" id="btn-cta" href="/store/index.htm">Store</a></li>
+          <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span>
+              <i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <div class="divisor">
+    <br>
+  </div>
+
   <!-- header starts here -->
 
-  <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-50vh">
+  <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-60vh">
 
     <div class="container-text">
       <h1>Store</h1>
@@ -86,6 +83,10 @@
 
   </header>
   <!-- header ends here -->
+
+  <div class="divisor">
+    <br>
+  </div>
 
   <!-- main content with sections -->
   <main>
@@ -98,11 +99,11 @@
       <div class="flex-cols-3 cols-gap-3 rows-gap-3 cols-padding cols-corners-soft cols-borders-width-1">
 
         <div class="col-3">
-          <figure>
+          <figure class="photos-brightness photos-zoom">
             <img src="./assets/img/javascript.jpg" alt="Placeholder image">
           </figure>
 
-          <h3>JavaScript – The Definitive Guide</h3>
+          <a class="col-3-h3">JavaScript – The Definitive Guide</a>
           <p>JavaScript – The Definitive Guide, 7e: Master the World's Most-Used Programming Language
             Paperback</p>
           <a href="https://www.amazon.co.uk/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_4?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706944&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-4&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=7d3eeb3b250dc1744bfd4f3849fdbb3c&camp=1634&creative=6738"
@@ -110,11 +111,11 @@
         </div>
 
         <div class="col-3">
-          <figure>
+          <figure class="photos-brightness photos-zoom">
             <img src="./assets/img/eloquentjavascript.jpg" alt="Placeholder image">
           </figure>
 
-          <h3>Eloquent JavaScript</h3>
+          <a class="col-3-h3">Eloquent JavaScript</a>
           <p>Eloquent Javascript, 3rd Edition: A Modern Introduction to Programming Paperback – Illustrated.
           </p>
           <a href="https://www.amazon.co.uk/Eloquent-Javascript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678706725&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-7&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b33753e3747321f89ade2b016da38bd3&camp=1634&creative=6738"
@@ -122,11 +123,11 @@
         </div>
 
         <div class="col-3">
-          <figure>
+          <figure class="photos-brightness photos-zoom">         
             <img src="./assets/img/javascriptthehidden.jpg" alt="Placeholder image">
           </figure>
 
-          <h3>JavaScript: The Hidden Parts</h3>
+          <a class="col-3-h3">JavaScript: The Hidden Parts</a>
           <p>Building More Performant, Flexible, and Maintainable Applications.</p>
           <a href="https://www.amazon.co.uk/JavaScript-Building-Performant-Maintainable-Applications/dp/1098122259/ref=sr_1_20?crid=3B6F4LM9U680K&amp;keywords=javascript&amp;qid=1678707779&amp;s=books&amp;sprefix=javascript%252Cstripbooks%252C90&amp;sr=1-20&_encoding=UTF8&tag=portifolio0c-21&linkCode=ur2&linkId=b320f53108bb67f10cb5dd8a17f1b085&camp=1634&creative=6738"
             class="btn btn-solid"><span>Buy now!</span></a>
@@ -145,24 +146,33 @@
   </div>
 
   <!-- footer -->
-  <footer class="text-center-desktop text-center-mobile">
-    <h2>Guilherme Duarte</h2>
-    <h3>Front-end Developer</h3>
-    <ul class="footer-links">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/portfolio/index.html">Portifolio</a></li>
-      <li><a href="/store/index.htm">Store</a></li>
-      <li><a href="/contact/index.html">Contact</a></li>
-    </ul>
+  <footer class="footer-distributed">
 
-    <ul class="footer-icons">
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-    </ul>
-    <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+    <div class="footer-left">
+      <h2>Guilherme Duarte</h2>
+      <h3>Front-end Developer</h3>
+      <p class="footer-links">
+        <a class="link-1" href="/index.html">Home</a>
+        .
+        <a href="/portfolio/index.html">Portifolio</a>
+        .
+        <a href="/store/index.htm">Store</a>
+        .
+        <a href="/contact/index.html">Contact</a>
+      </p>
+    </div>
+
+    <div class="footer-right-2">
+      <p class="privacy-2"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+      <div class="footer-right">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
   </footer>
 
 

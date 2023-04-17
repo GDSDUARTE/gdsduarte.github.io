@@ -12,8 +12,8 @@
     <!-- Preload large image -->
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/lunevedy2.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,11 +46,10 @@
 
 <body>
 
-    <nav class="theme-dark menu-sticky">
-
+    <nav class="theme-dark">
         <div class="container-menu menu-desktop">
             <a href="/index.html" class="brand">
-                <img src="/assets/img/logo.png" alt="Sample website logo">
+                <img src="/assets/img/logo.png" alt="Website logo">
             </a>
             <div class="container-menu-links">
                 <div class="nav-toggle">
@@ -59,16 +58,19 @@
                     <div class="bar-3"></div>
                 </div>
                 <ul class="links-wrapper">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/portfolio/index.html">Portifolio</a></li>
-                    <li><a href="/store/index.htm">Store</a></li>
-                    <li><a class="btn btn-outline" id="btn-cta" href="#"><span>Contact</span> <i
-                                class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/index.html">Home</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/store/index.htm">Store</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span>
+                            <i class="fa-solid fa-chevron-right"></i></a></li>
                 </ul>
             </div>
         </div>
-
     </nav>
+
+    <div class="divisor">
+        <br>
+    </div>
 
     <section class="container-contact-form w-800px">
 
@@ -124,29 +126,33 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-center-desktop text-center-mobile">
+    <footer class="footer-distributed">
 
-        <h2>Guilherme Duarte</h2>
+        <div class="footer-left">
+            <h2>Guilherme Duarte</h2>
+            <h3>Front-end Developer</h3>
+            <p class="footer-links">
+                <a class="link-1" href="/index.html">Home</a>
+                .
+                <a href="/portfolio/index.html">Portifolio</a>
+                .
+                <a href="/store/index.htm">Store</a>
+                .
+                <a href="/contact/index.html">Contact</a>
+            </p>
+        </div>
 
-        <h3>Front-end Developer</h3>
+        <div class="footer-right-2">
+            <p class="privacy-2"><a href="/privacy.html">Privacy &amp; Legal</a></p>
 
-        <ul class="footer-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio/index.html">Portifolio</a></li>
-            <li><a href="/store/index.htm">Store</a></li>
-            <li><a href="/contact/index.html">Contact</a></li>
-        </ul>
-
-        <ul class="footer-icons">
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
-
-        <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
-
+            <div class="footer-right">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

@@ -11,8 +11,8 @@
   <!-- Preload large image -->
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <link rel="stylesheet" href="/assets/css/lunevedy2.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,12 +43,11 @@
       justify-content: center;
       align-items: start;
       flex-direction: column;
-      margin-bottom: -50px;
       z-index: 1;
     }
 
     header.theme-darker h1 {
-      color: var(--green-400)
+      color: yellow
     }
 
     header.theme-darker h2 {
@@ -115,42 +114,42 @@
       background-color: yellow;
       color: rgb(25, 25, 25);
     }
+
+    
   </style>
 
 </head>
 
 <body>
 
-  <nav class="theme-dark menu-sticky">
-    <div class="container-menu menu-desktop">
-      <a href="/index.html" class="brand">
-        <img src="/assets/img/logo.png" alt="Sample website logo">
-      </a>
-      <div class="container-menu-links">
-        <div class="nav-toggle">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
-        </div>
-        <ul class="links-wrapper">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/portfolio/index.html">Portifolio</a></li>
-          <li><a href="/store/index.htm">Store</a></li>
-          <li>
-            <a class="btn btn-outline" id="btn-cta" href="/contact/index.html">
-              <span>Contact</span><i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <main>
-    <br>
-    <br>
-    <br>
-    <header id="background-section" class="cols-2-half text-center-mobile flex-column-reverse theme-darker">
+    <nav class="theme-dark">
+      <div class="container-menu menu-desktop">
+        <a href="/index.html" class="brand">
+          <img src="/assets/img/logo.png" alt="Website logo">
+        </a>
+        <div class="container-menu-links">
+          <div class="nav-toggle">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </div>
+          <ul class="links-wrapper">
+            <li><a class="btn btn-outline" id="btn-cta" href="/index.html">Home</a></li>
+            <li><a class="btn btn-outline" id="btn-cta" href="/portfolio/index.html">Portifolio</a></li>
+            <li><a class="btn btn-outline" id="btn-cta" href="/store/index.htm">Store</a></li>
+            <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span>
+                <i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="divisor">
+      <br>
+    </div>
+
+    <header id="background-section" class="cols-2-half text-center-mobile flex-column-reverse theme-dark">
 
       <div class="col-2 col-text">
         <h1>Portfolio</h1>
@@ -172,6 +171,10 @@
       </div>
 
     </header>
+
+    <div class="divisor">
+      <br>
+    </div>
 
     <!-- UI/UX Projects -->
     <section class="section-selector-1 uiux-projects w-1140px theme-dark">
@@ -359,24 +362,33 @@
   </div>
 
   <!-- footer -->
-  <footer class="text-center-desktop text-center-mobile">
-    <h2>Guilherme Duarte</h2>
-    <h3>Front-end Developer</h3>
-    <ul class="footer-links">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/portfolio/index.html">Portifolio</a></li>
-      <li><a href="/store/index.htm">Store</a></li>
-      <li><a href="/contact/index.html">Contact</a></li>
-    </ul>
+  <footer class="footer-distributed">
 
-    <ul class="footer-icons">
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-    </ul>
-    <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+    <div class="footer-left">
+      <h2>Guilherme Duarte</h2>
+      <h3>Front-end Developer</h3>
+      <p class="footer-links">
+        <a class="link-1" href="/index.html">Home</a>
+        .
+        <a href="/portfolio/index.html">Portifolio</a>
+        .
+        <a href="/store/index.htm">Store</a>
+        .
+        <a href="/contact/index.html">Contact</a>
+      </p>
+    </div>
+
+    <div class="footer-right-2">
+      <p class="privacy-2"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+      <div class="footer-right">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script>
@@ -385,7 +397,7 @@
       const javascriptBtn = document.getElementById("javascript-btn");
       const javascriptProjects = document.getElementById("javascript-projects");
       const uiuxProjects = document.querySelector(".uiux-projects");
-  
+
       uiuxBtn.addEventListener("click", () => {
         uiuxProjects.style.transform = "translateX(0)";
         uiuxProjects.style.opacity = "1";
@@ -395,11 +407,11 @@
         setTimeout(() => {
           javascriptProjects.style.display = "none";
         }, 100);
-  
+
         uiuxBtn.classList.add('uiux-btn-active');
         javascriptBtn.classList.remove('javascript-btn-active');
       });
-  
+
       javascriptBtn.addEventListener("click", () => {
         uiuxProjects.style.transform = "translateX(-100%)";
         uiuxProjects.style.opacity = "0";
@@ -409,15 +421,15 @@
         javascriptProjects.style.transform = "translateX(0)";
         javascriptProjects.style.opacity = "1";
         javascriptProjects.style.display = "flex";
-  
+
         javascriptBtn.classList.add('javascript-btn-active');
         uiuxBtn.classList.remove('uiux-btn-active');
       });
-  
+
       const buttons = document.querySelectorAll('.button-container button');
       const backgroundSection = document.getElementById('background-section');
       const projectImage = document.getElementById('project-image');
-  
+
       buttons.forEach(button => {
         button.addEventListener('click', () => {
           const newBackgroundImage = button.getAttribute('data-bg-image');
@@ -428,7 +440,7 @@
       });
     });
   </script>
-  
+
 
 </body>
 

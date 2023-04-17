@@ -1,19 +1,3 @@
-.container-menu.menu-desktop { background-color: var(--gray-800) }
-.container-menu.menu-mobile { background-color: var(--gray-800) }
-.container-menu.menu-mobile ul.mobile-display { background-color: var(--gray-800) }
-.container-menu a:link { font-weight: 600 !important; color: var(--white-000) } 
-.container-menu a:visited { font-weight: 600 !important; color: var(--gray-200) }
-.container-menu a#btn-cta:link,
-.container-menu a#btn-cta:visited { color: var(--white-000); font-weight: 600 }
-.container-menu .item-icon .bar1,.container-menu .item-icon .bar2,.container-menu .item-icon .bar3 { background-color: var(--white-000) }
-.container-menu a#btn-cta:link,
-.container-menu a#btn-cta:visited { background-color: var(--blue-500) }
-.container-menu a#btn-cta:focus,
-.container-menu a#btn-cta:hover,
-.container-menu a#btn-cta:active { background-color: var(--blue-400) }
-.container-menu a#btn-cta:focus,
-.container-menu a#btn-cta:hover,
-.container-menu a#btn-cta:active { border-color: var(--blue-400) }
 
 header.hero-block-js { 
     min-height: 200px !important;
@@ -44,7 +28,7 @@ header.hero-block-js .hero-text-container img {
 @media (min-width: 768px) { .theme-js { padding-top: 64px } }
 @media (max-width: 768px) { .theme-js { padding-top: 42px } }
 
-.theme-js:last-child { padding-bottom: 6% } 
+.theme-js:last-child {padding-bottom: 6%;} 
 @media (max-width: 767px ) { .theme-js:last-child { padding-bottom: 12% } }
 
 .theme-js .col-2 { margin-bottom: 40px !important }
@@ -65,3 +49,35 @@ header.hero-block-js .hero-text-container img {
 
 .theme-js .col-2 a.btn > :nth-child(2) { margin-left: 10px }
 
+section:last-child {
+    padding-bottom: 6%;
+}
+
+.text-center {
+    text-align: center!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+
+.col-3 {
+    background-color: inherit;
+    padding: 18px 18px 18px 18px;
+}
+
+@media (min-width: 768px){
+.col-3 {
+    width: 31%;
+    margin-bottom: 48px;
+}
+}

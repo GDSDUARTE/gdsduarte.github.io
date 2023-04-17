@@ -12,8 +12,8 @@
     <!-- Preload large image -->
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://lunevedy.netlify.app/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/lunevedy2.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <nav class="theme-dark menu-sticky">
+    <nav class="theme-dark">
         <div class="container-menu menu-desktop">
             <a href="/index.html" class="brand">
                 <img src="/assets/img/logo.png" alt="Website logo">
@@ -56,24 +56,27 @@
                     <div class="bar-3"></div>
                 </div>
                 <ul class="links-wrapper">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/portfolio/index.html">Portifolio</a></li>
-                    <li><a href="/store/index.htm">Store</a></li>
-                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span> <i
-                                class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/index.html">Home</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/portfolio/index.html">Portifolio</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/store/index.htm">Store</a></li>
+                    <li><a class="btn btn-outline" id="btn-cta" href="/contact/"><span>Contact</span>
+                            <i class="fa-solid fa-chevron-right"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="divisor">
+        <br>
+    </div>
+    
     <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-60vh">
         <div class="container-text">
             <div class="badge corners-soft">Front-end Developer</div>
             <h1 class="text-shadow">Guilherme Duarte</h1>
             <h2 class="text-shadow">I create digital experiences to promote products, services and events.</h2>
         </div>
-        <div class="container-media">
-            <img src="" alt="Placeholder image">
-        </div>
+
         <div class="container-btn">
             <a href="/portfolio/index.html" class="btn btn-solid btn-pill btn-small">
                 <span>Portifolio</span><i class="fas fa-shopping-cart"></i>
@@ -83,15 +86,17 @@
             </a>
         </div>
     </header>
+
     <div class="divisor">
         <br>
     </div>
+
     <main>
         <section class="section-selector-1 w-1140px theme-dark">
             <div class="col-1 col-1-width-1140px text-center">
                 <h2>Recent projects</h2>
-                <h3>Below you can see some examples of my recent work. <br>Check out my complete portfolio of <a
-                        href="/portfolio/index.html">UI/UX</a> and <a href="/portfolio/js/index.html">JavaScript</a>
+                <h3>Below you can see some examples of my recent work. <br>Check out my complete <a
+                        href="/portfolio/index.html">portfolio</a> of
                     projects. <br><br>Have a project you would like to discuss? <br>Let's make something great together!
                 </h3>
             </div>
@@ -128,33 +133,47 @@
             <!-- End three-column flexbox grid -->
         </section>
     </main>
+
     <div class="divisor">
         <br>
     </div>
-    <footer class="text-center-desktop text-center-mobile">
-        <h2>Guilherme Duarte</h2>
-        <h3>Front-end Developer</h3>
-        <ul class="footer-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio/index.html">Portifolio</a></li>
-            <li><a href="/store/index.htm">Store</a></li>
-            <li><a href="/contact/index.html">Contact</a></li>
-        </ul>
-        <ul class="footer-icons">
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
-        <p class="privacy"><a href="/privacy.html">Privacy &amp; Legal</a></p>
-        <br>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h2>Guilherme Duarte</h2>
+            <h3>Front-end Developer</h3>
+            <p class="footer-links">
+                <a class="link-1" href="/index.html">Home</a>
+                .
+                <a href="/portfolio/index.html">Portifolio</a>
+                .
+                <a href="/store/index.htm">Store</a>
+                .
+                <a href="/contact/index.html">Contact</a>
+            </p>
+        </div>
+
+        <div class="footer-right-2">
+            <p class="privacy-2"><a href="/privacy.html">Privacy &amp; Legal</a></p>
+
+            <div class="footer-right">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <div style="width: 100%; text-align: center;">
         <iframe
-            src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=48&l=ur1&category=amazon_business&banner=1VCYTD9FQ2WQDVK6AVG2&f=ifr&linkID=1faab15dfe0d777068b4b371c9abc743&t=portifolio0c-21&tracking_id=portifolio0c-21"
+            src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=48&l=ur1&category=amazon_business&banner=1VCYTD9FQ2WQDVK6AVG2&f=ifr&linkID=639629e44f9db6c561ecb14b7ada18a8&t=portifolio0c-21&tracking_id=portifolio0c-21"
             width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"
             sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation">
         </iframe>
-    </footer>
+    </div>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJGDMNFGGB"></script>
@@ -174,7 +193,7 @@
                     "background": "#000"
                 },
                 "button": {
-                    "background": "#14F195"
+                    "background": "yellow"
                 }
             },
             "theme": "classic",
