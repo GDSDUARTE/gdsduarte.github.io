@@ -41,6 +41,22 @@
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="AlnqPe6vHQGMQRFOGiy0lJ5HEBg8190V0QLCgYYCdFY" />
+
+    <!-- Style -->
+    <style>
+        .amazon {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {}
+
+        @media (max-width: 767px) {
+            .amazon {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -65,7 +81,7 @@
             </div>
         </div>
     </nav>
-    
+
     <header class="theme-dark hero-bg header-after-menu-sticky text-center-mobile desktop-min-height-60vh">
         <div class="container-text">
             <div class="badge corners-soft">Front-end Developer</div>
@@ -151,7 +167,7 @@
         </div>
 
         <div class="footer-right-2">
-            
+
             <div class="footer-right">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -163,7 +179,7 @@
         </div>
     </footer>
     <br>
-    <div style="width: 100%; text-align: center;">
+    <div class="amazon">
         <iframe
             src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=48&l=ur1&category=amazon_business&banner=1VCYTD9FQ2WQDVK6AVG2&f=ifr&linkID=639629e44f9db6c561ecb14b7ada18a8&t=portifolio0c-21&tracking_id=portifolio0c-21"
             width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"
@@ -186,10 +202,13 @@
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
-                    "background": "#000"
+                    "background": "#000",
+                    "text": "var(--slate-100)"
+
                 },
                 "button": {
-                    "background": "yellow"
+                    "background": "#D9BB84",
+                    "text": "black"
                 }
             },
             "theme": "classic",
@@ -199,6 +218,8 @@
             }
         });
     </script>
+
+    <script src="/assets/js/hamburgueMenu.js"></script>
 </body>
 
 </html>

@@ -47,7 +47,12 @@
         }
 
         .theme-js .col-4 {
-            
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: 0.2s;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .theme-js h3 {
@@ -84,6 +89,12 @@
             flex-direction: column;
             overflow: hidden;
             justify-content: space-between;
+        }
+
+        .container-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
@@ -233,11 +244,11 @@
                 </div>
             </div>
 
-            <div class="col-4" style="background-color: transparent;">
+            <div class="col-4" style="background-color: transparent; box-shadow: none;">
                 <p></p>
             </div>
 
-            <div class="col-4" style="background-color: transparent;">
+            <div class="col-4" style="background-color: transparent; box-shadow: none;">
                 <p></p>
             </div>
         </section>
@@ -280,6 +291,7 @@
 
     <script src="assets/js/menu.js"></script>
 
+<script src="/assets/js/hamburgueMenu.js"></script>
 </body>
 
 </html>

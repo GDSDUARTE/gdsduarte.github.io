@@ -73,7 +73,7 @@ body {
 }
 
 h1 {
-  font-size: 78px;
+  /* font-size: 78px; */
   font-weight: normal;
   letter-spacing: -2px;
   margin-bottom: 12px;
@@ -99,7 +99,7 @@ h3 {
 }
 
 p {
-  
+
   color: var(--slate-100)
 }
 
@@ -403,6 +403,26 @@ header.theme-dark .container-btn a.btn:nth-child(2):active {
     display: flex;
     flex-direction: column;
   }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-distributed p.footer-links a {
+    padding: 0;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .container-flex {
@@ -421,4 +441,50 @@ header.theme-dark .container-btn a.btn:nth-child(2):active {
 
 .hero-text-container a:hover {
   color: var(--gray-700)
+}
+
+
+/* Hamburguer Menu */
+.nav-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar-1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar-2 {
+  opacity: 0;
+}
+
+.change .bar-3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .links-wrapper {
+    display: none;
+  }
+
+  .links-wrapper.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; 
+  }
 }
